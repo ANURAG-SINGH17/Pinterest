@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+.page5{
+    background: url(https://miro.medium.com/v2/resize:fit:1200/1*83H0VEUnwwZ9QukANdXnig.jpeg);
+    object-fit: cover;
+    object-position: center;
+
+}
+
