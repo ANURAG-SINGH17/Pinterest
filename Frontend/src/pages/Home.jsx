@@ -228,11 +228,11 @@ const Home = () => {
 
   const imgObj3 = {
     img1:'https://www.stylebysavina.com/wp-content/uploads/2022/05/minimalist-outfit-ideas.jpg',
-    img2:'https://udaipurbazar.com/images/thumbs/0003690_traditional-couple-outfits_510.jpeg',
+    img2:'https://mikadopersonalstyling.com/wp-content/uploads/2020/06/womens-fashion-tips.jpg',
     img3:'https://intheblouse.elementor.cloud/wp-content/uploads/2023/04/7aadfdb3-6d95-45d1-89c2-efbff186d495-1.png',
     img4:'https://media.samyakk.com/pub/media/catalog/product/d/a/dark-olive-green-umbrella-style-net-designer-lehenga-with-pentagon-neck-blouse-gg1038.jpg',
     img5:'https://fashionsuggest.in/wp-content/uploads/ranveer-simgh-sharwani.jpg',
-    img6:'https://www.parivarceremony.com/media/catalog/product/cache/14a1553305c404c221b3f13f50c007dd/p/1/p1044mw22_1.jpg'
+    img6:'https://www.oprah.com/g/image-resizer?width=670&link=https://static.oprah.com/2022/09/202209-orig-fall-22-fashion-trends-baggy-pants-1200x1200.jpg'
   }
 
   return (
