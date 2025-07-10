@@ -8,7 +8,7 @@ const SignUpPop = ({setPannel,setSignUpPannel}) => {
   const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-    const [isSending, setIsSending] = useState(false);
+  const [isSending, setIsSending] = useState(false);
 
   const signupHandler = async (e) => {
     e.preventDefault();

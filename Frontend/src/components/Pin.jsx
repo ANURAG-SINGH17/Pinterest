@@ -130,7 +130,7 @@ const handleUnsavePin = async () => {
   ]);
         toast.success("Comment Sent successfully");
 
-        // ✅ Optimistically add the new comment:
+        // Optimistically add the new comment:
         const newComment = response.data.newComment || {
           comment: commentText,
           name: response.data.userName || "You", // fallback if API doesn't send
@@ -339,7 +339,7 @@ const handleOwnerCommentDelete = async (commentId) => {
             </div>
           </div>
 
-          {/* 🔥 Delete Button Logic */}
+          {/* Delete Button Logic */}
           {isOwner ? (
             <button
               onClick={() => handleOwnerCommentDelete(comment._id)}

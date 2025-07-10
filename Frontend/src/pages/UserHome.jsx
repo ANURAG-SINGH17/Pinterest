@@ -15,7 +15,6 @@ const userhome = () => {
 
   const {userData , setUserData} = useContext(userDataContext);
 
-
   const [show, setShow] = useState(false);
 
   const [sideContent, setSideContent] = useState(false);
@@ -73,7 +72,7 @@ const userhome = () => {
       setSelectPost(false);
       setShowEditProfile(false);
     } else if (location.pathname === "/userhome/edit-profile") {
-      setShowEditProfile(true);  // ✅ नया कंडीशन
+      setShowEditProfile(true);  
       setShowUserProfile(false);
       setShowProfile(false);
       setSelectPost(false);

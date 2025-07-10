@@ -34,7 +34,7 @@ const LoginPopUp = ({setPannel,setSignUpPannel}) => {
             navigate('/userhome');
             setEmail('');
             setPassword('');
-            // setSignUpPanel(true); // ye bhi tumhara state hoga
+            // setSignUpPanel(true);
         } else {
             console.log(result.error);
             toast.error('Error logging in user');

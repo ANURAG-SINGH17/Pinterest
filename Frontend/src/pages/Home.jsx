@@ -29,7 +29,7 @@ const Home = () => {
   const [password, setPassword] = useState('');
 
   const {setPinData} = useContext(pinDataContext);
-       const {setNotifications} = useContext(NotificationsContext)
+    const {setNotifications} = useContext(NotificationsContext)
 
   useEffect(() => {
     const fetchData = async () => {
@@ -176,14 +176,14 @@ const Home = () => {
     })
     .to(".animated-img2", {
       duration: 0.8,
-      delay: -1, // Ye delay ab 5 nahi hoga, kyunki pehle animation khatam hone ka wait nahi karna chahiye
+      delay: -1, 
       y: "-100%",
       opacity: 1,
       stagger: 0.4
     })
     .to(".animated-img2", {
       duration: 1.5,
-      delay: 6, // Pichle wale animation ka effect thoda time tak rahega
+      delay: 6, 
       y: "-200%",
       opacity: 0,
       stagger: 0.3
