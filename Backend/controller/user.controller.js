@@ -240,17 +240,17 @@ module.exports.deletePin = async (req, res, next) => {
             return res.status(400).json({ message: 'You must be logged in to delete a pin' });
         }
 
-        // Pehle pin ko find karo (takki humein public_id mile)
+        // 1Check if the pin exists
         const pin = await pinModel.findById(pinId);
 
         if (!pin) {
             return res.status(400).json({ message: "Pin not found" });
         }
 
-        // 👇 Step 2: Cloudinary se image delete karo
+       
         await cloudinary.uploader.destroy(pin.public_id);
 
-        // 👇 Step 3: DB se delete karo
+        
         await pinModel.findByIdAndDelete(pinId);
 
         res.status(200).json({ message: 'Pin deleted successfully from both DB and Cloudinary!' });
@@ -473,7 +473,7 @@ module.exports.setProfilePicture = async (req, res, next) => {
         // Convert image to base64
         const base64String = `data:${req.file.mimetype};base64,${req.file.buffer.toString('base64')}`;
 
-        // 1️⃣ Get current user details
+        // Get current user details
         const user = await userModel.findById(req.user._id);
         if (!user) {
             return res.status(404).json({ message: 'User not found' });
